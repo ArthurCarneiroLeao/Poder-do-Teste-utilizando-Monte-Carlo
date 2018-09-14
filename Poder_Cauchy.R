@@ -2,7 +2,9 @@
   
   r <- 1000            
   mu0 <- 1/2       
-  mu.test <- c(0.1,0.15,0.2,0.25,0.3,0.4,.5,1,1.5,2,2.5,3,3.5,4,4.5,5)   
+  mu.test1 <- c(seq(0.1, 0.5, .05))
+  mu.test2 <- c(seq(1, 5, .5))
+  mu.test<-c(mu.test1,mu.test2) 
   M <- length(mu.test)              
   poder <- numeric(M)               
   nobs <- c(20, 40, 50, 100)        
